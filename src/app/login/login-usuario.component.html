@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="topo">
+      <span class="material-icons">
+        directions_car
+      </span>
+    </div>
+    <div class="form">
+      <!--login-->
+      <div class="login-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Digite seu nome</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" matInput placeholder="Adão">
+        </mat-form-field>
+      </div>
+      <!--senha-->
+      <div class="login-container">
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" matInput placeholder="aA*@!9">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+      </div>
+        <div class="example-button-row">
+          <button mat-stroked-button color="Black"><a routerLink="/menu">Entre</a></button> <!--Temporario, Fazer validação-->
+          <button mat-button><a routerLink="/cadastro-usuario">Registri-se</a></button>
+        </div>
+    </div>
+  </body>
+</html>

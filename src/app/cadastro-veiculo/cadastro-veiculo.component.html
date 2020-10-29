@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Veiculo</title>
+</head>
+<body>
+  <div class="topo">
+    <h1>BlueZone</h1>
+  </div>
+  <mat-toolbar>Cadastro Veiculo</mat-toolbar>
+  <!--Formulario-->
+  <div class="form">
+    <form [formGroup] ="cadastroVeiculo" (ngSubmit)="submit()" (ngReset)="reiniciarForm">
+      <!--placa-->
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Digite a placa do veiculo</mat-label>
+          <input matInput placeholder="AAA1234" name="placa" formControlName="placa">
+        </mat-form-field>
+      </div>
+      <!--renavam-->
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Digite o renavam do veiculo</mat-label>
+          <input matInput placeholder= 99999999999 name="renavam" formControlName="renavam">
+        </mat-form-field>
+      </div>
+      <!--marca-->
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Digite a marca</mat-label>
+          <input matInput placeholder="Montadora" name="marca" formControlName="marca">
+        </mat-form-field>
+      </div>
+      <!--modelo-->
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Digite o modelo</mat-label>
+          <input matInput placeholder="modelo" name="modelo" formControlName="modelo">
+        </mat-form-field>
+      </div>
+      <!--cor-->
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Digite a cor</mat-label>
+          <input matInput placeholder="Azul" name="cor" formControlName="cor">
+        </mat-form-field>
+      </div>
+        <!--Botões-->
+        <mat-card-actions>
+          <div class="example-button-row">
+            <button type="submit" mat-stroked-button color="primary">Salvar</button>
+            <button type="reset" mat-stroked-button color="primary">Cancelar</button>
+            <button mat-stroked-button color="primary"><a routerLink="/menu">Voltar</a></button>
+          </div>
+        </mat-card-actions>
+    </form> 
+  </div>
+</body>
+</html>
+ 

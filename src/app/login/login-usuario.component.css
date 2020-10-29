@@ -1,0 +1,40 @@
+/**/
+.login-container .mat-form-field + .mat-form-field {
+  margin-left: 5px;
+}
+
+.login-right-align {
+  text-align: right;
+}
+
+input.login-right-align::-webkit-outer-spin-button,
+input.login-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.login-right-align {
+  -moz-appearance: textfield;
+}
+
+/*pagina*/
+body {
+  background-color: #E5E5E5;
+  margin: 0 auto;
+}
+
+.form {
+  text-align:center;
+  padding-top: 50px;
+
+}
+
+.topo{
+  background-color: #2D9CDB;
+  padding-top: 50px;
+  margin: 0 auto;
+  text-align:center;
+}
+span{
+  text-align:center;
+  color: #E5E5E5;
+}

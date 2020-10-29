@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Usuario</title>
+</head>
+  <body>
+    <div class="topo">
+      <h1>BlueZone</h1>
+    </div>
+    <mat-toolbar>Cadastro Usuario</mat-toolbar>
+    <!--Formulario-->
+    <div class="form">
+      <form [formGroup] ="cadastroUsuario" (ngSubmit)='submit()' (ngReset)="reiniciarForm"> 
+        <!--nome-->
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Digite seu nome</mat-label>
+            <input matInput placeholder="Adão" name="nome" formControlName="nome">
+          </mat-form-field>
+        </div>
+        <!--sobrenome-->
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Digite seu sobrenome</mat-label>
+            <input matInput placeholder="Silva" name="sobrenome" formControlName="sobrenome">
+          </mat-form-field>
+        </div>
+        <!--cpf-->
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Digite seu cpf</mat-label>
+            <input matInput placeholder= 99999999999 name="cpf" formControlName="cpf">
+          </mat-form-field>
+        </div>
+        <!--email-->
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Digite seu e-mail</mat-label>
+            <input matInput placeholder="silva@exemplo.com" name="email" formControlName="email">
+          </mat-form-field>
+        </div>
+        <!--celular-->
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Digite o numero de seu celular</mat-label>
+            <input matInput placeholder="87999999999" name="celular" formControlName="celular">
+          </mat-form-field>
+        </div>
+        <!--senha-->
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Digite sua senha</mat-label>
+            <input matInput placeholder="aA*@!9" name="senha" formControlName="senha">
+          </mat-form-field>
+        </div>
+        <!--Botões-->
+        <mat-card-actions>
+          <div class="example-button-row">
+            <button type="submit" mat-stroked-button color="primary">Salvar</button>
+            <button type="reset" mat-stroked-button color="primary">Cancelar</button>
+          </div>
+        </mat-card-actions>
+      </form>
+    </div>
+  </body>
+</html>
+
