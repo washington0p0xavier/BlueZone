@@ -1,0 +1,22 @@
+
+
+>use Blue Zone
+
+>db.BlueZone.insert({
+    id: ?,
+    nome: "Fulano",
+    sobrenome: "Silva",
+    cpf: "98765432101",
+    email: "s@gmail.com",
+    celular: "87999999999",
+    senha: "1@",
+    veiculo{[
+      id: ?,
+      placa: aaa1111;
+      renavan: 99999999999;
+      marca: GM;
+      modelo: Malibu;
+      cor: Azul;
+      }]
+})
+
